@@ -7,7 +7,17 @@ $(document).ready(function(){
 
     var userInput = $("#new-task").val();
 
-    $("#list").append("<li>" + userInput + "<span class = 'completeList'> Completed </span>" + " <span class = 'remove'> Remove </span> " + "</li>");
+    $("#list").append("<div class = 'hideList'> <li>" + userInput +
+    "<span class = 'clickComplete'> Completed" +  "</span> <span class = 'clickRemove'> Remove"  + "</span> </div> </li>");
+
+    $(".clickRemove").last().click(function(){
+      $(this).parent().hide();
+    });
+
+    $(".clickComplete").last().click(function(){
+      $(this).parent().hide();
+      $("#complete").append("<li>" + userInput + "</li>");
+    });
 
   });
 });
