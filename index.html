@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>To Do List!</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>To Do List!</h1>
+        <h2>Add or remove a task!</h2>
+        <form id="new-tasks">
+          <div class="form-group">
+            <label for="new-tasks">Name a task</label>
+            <input type="text" class="form-control" id="new-task">
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+
+
+  <div class="row">
+    <div class="col-md-6" id = "list">
+      <h3>To-Do-List:</h3>
+      <ul>
+      </ul>
+    </div>
+
+    <div class = "col-md-6" id = "complete">
+      <h3>Completed Tasks:</h3>
+      <ul>
+      </ul>
+    </div>
+
+  </div>
+
+  </div>
+</body>
+</html>
